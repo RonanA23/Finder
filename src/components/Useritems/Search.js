@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
-import GithubContext from '../../context/github/githubContext';
-import AlertContext from '../../context/alert/alertContext';
+import GithubContext from '../../context/github/githubcontext';
+import AlertContext from '../../context/Alert/alertContext';
 
 const Search = () => {
   const githubContext = useContext(GithubContext);
@@ -8,7 +8,7 @@ const Search = () => {
 
   const [text, setText] = useState('');
 
-  const onChange = (e) => setText(' e.target.value ');
+  const onChange = (e) => setText(e.target.value);
 
   const onSubmit = (e) => {
     e.preventDefault();

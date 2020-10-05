@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useContext } from 'react';
 import Repos from '../Repos/Repos';
 import Spinner from '../layout/Spinner';
 import { Link } from 'react-router-dom';
-import GithubContext from '../../context/github/githubContext';
+import GithubContext from '../../context/github/githubcontext';
 
 const User = ({ match }) => {
   const githubContext = useContext(GithubContext);
@@ -97,7 +97,7 @@ const User = ({ match }) => {
         <div className='badge badge-success'>Public Repos:{public_repos}</div>
         <div className='badge badge-dark'>Public Gists:{public_gists}</div>
       </div>
-      <Repos repos={this.props.repos} />
+      <Repos repos={repos} />
     </Fragment>
   );
 };

@@ -13,6 +13,9 @@ export class Navbar extends Component {
           <li>
             <Link to='about'>About</Link>
           </li>
+          <li>
+            <Link to='practice'>Practice</Link>
+          </li>
         </ul>
       </nav>
     );

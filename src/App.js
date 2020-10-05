@@ -6,14 +6,11 @@ import Navbar from './components/layout/Navbar';
 import Alert from './components/layout/Alert';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
-import NotFound from '../components/pages/NotFound';
+import Practice from './components/pages/Practice';
+import NotFound from './components/pages/NotFound';
 
 import GithubState from './context/github/Githubstate';
-import AlertState from './context/alert/Alertstate';
-
-//import Useritem from './components/Useritems/Useritem';
-
-//make user, useritems,searchbar, axios request to fill state.
+import AlertState from './context/Alert/Alertstate';
 
 const App = () => {
   return (
@@ -28,6 +25,7 @@ const App = () => {
                 <Route exact path='/' component={Home} />
                 <Route exact path='/about' component={About} />
                 <Route exact path='/user/:login' component={User} />
+                <Route exact path='/practice' component={Practice} />
                 <Route component={NotFound} />
               </Switch>
             </div>
@@ -39,5 +37,3 @@ const App = () => {
 };
 
 export default App;
-
-/* */
